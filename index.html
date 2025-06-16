@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./font-awesome/css/all.min.css">  
+  <link rel="stylesheet" href="recognize.css">
+  <title>FalaDoc</title>
+</head>
+
+<body>
+  <header>FalaDoc 
+    <i class="far fa-comment-dots"></i>
+    <div class="question-button">
+      <i class="far fa-question-circle fa-lg" onmouseover="showInformation()"
+        onmouseout="hideInformation()"></i>
+    </div>
+    <div class="information">
+      <ul>
+        <li>Clique no microfone</li>
+        <li>Fale seu texto</li>
+        <li>Clique em copiar</li>
+        <li>Cole onde quiser</li>
+      </ul>
+    </div>
+  </header>
+  <section>
+    <div class="container content">
+      <div class="notification" onclick="hideAlert()">
+        <div class="alert alert-success" role="alert">
+          Sucesso! Texto copiado para a área de trabalho.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="display" class="label">Campo de Leitura</label>
+        <textarea type="text" class="form-control" id="display" placeholder="Aqui mostra o que você tem a dizer" 
+          rows=10 cols=80></textarea>
+      </div>
+      <footer>
+        <div class="left">
+          <button id="clear" type="button" class="btn btn-light" title="limpar o texto." onclick="clearDisplay()">
+            <i class="fas fa-broom fa-lg"></i>
+          </button>
+        </div>
+        <div class="right">
+          <button id="copy" type="button" class="btn btn-light" title="copiar o texto falado." onclick="copy()">
+            <i class="fas fa-copy fa-lg"></i>
+          </button>
+          <button id="button" type="button" class="btn btn-success" title="clique, permita e fale." onclick="toggleStartStop()">
+            <i class="fas fa-microphone fa-lg"></i>
+          </button>
+        </div>
+        
+      </footer>
+    </div>
+    <div>Desenvolvedor <br>Antonio Carlos Franco.</div>
+  </section>
+  <script src="recognize.js"></script>
+  
+</body>
+
+</html>
