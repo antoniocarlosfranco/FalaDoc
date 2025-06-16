@@ -13,7 +13,7 @@ Ele entenderá o idioma configurado no seu navegador.
 https://antoniocarlosfranco.github.io/FalaDoc/
 
 ### FalaDoc Screen
-![FalaDoc Screen](https://raw.githubusercontent.com/antoniocarlosfranco/FalaDoc/master/screen_shots/1.png)
+![FalaDoc Screen](https://raw.githubusercontent.com/antoniocarlosfranco/FalaDoc/master/screen_shots/1.web.png)
 
 ### FalaDoc Screen mobile
 ![FalaDoc Screen](https://raw.githubusercontent.com/antoniocarlosfranco/FalaDoc/master/screen_shots/2.mobile.jpg)
